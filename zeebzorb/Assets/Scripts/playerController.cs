@@ -106,7 +106,7 @@ public class playerController : MonoBehaviour
 
         if (controlPen)
         {
-            penRB.velocity = move;
+            penRB.velocity = move/3;
         }
         else
         {

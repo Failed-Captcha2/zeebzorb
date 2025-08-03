@@ -247,7 +247,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -271,7 +271,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 138177814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.1, y: 0.5, z: -10}
+  m_LocalPosition: {x: 20, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -303,12 +303,12 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -3.5, y: 5}
-      - {x: -3.5, y: -5}
+    - - {x: -2.2, y: 5}
+      - {x: -2.2, y: -5}
       - {x: 5, y: -5}
       - {x: 5, y: 5}
-    - - {x: -3.3, y: 4.8}
-      - {x: -3.3, y: -4.8}
+    - - {x: -2, y: 4.8}
+      - {x: -2, y: -4.8}
       - {x: 4.8, y: -4.8}
       - {x: 4.8, y: 4.8}
 --- !u!50 &138177819
@@ -387,7 +387,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7
+  orthographic size: 8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -411,7 +411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.2, y: -0.3, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -445,13 +445,12 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -5, y: 5}
       - {x: -5, y: -5}
-      - {x: 3.5, y: -5}
-      - {x: 3.5, y: 5}
+      - {x: 2.8, y: -5}
+      - {x: 2.8, y: 5}
     - - {x: -4.8, y: 4.8}
       - {x: -4.8, y: -4.8}
-      - {x: 0.81471443, y: -4.8}
-      - {x: 3.3, y: -4.8}
-      - {x: 3.3, y: 4.8}
+      - {x: 2.6, y: -4.8}
+      - {x: 2.6, y: 4.8}
 --- !u!50 &519420034
 Rigidbody2D:
   serializedVersion: 4
@@ -553,7 +552,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1328626875}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 32.3, y: 0.9, z: 0}
+  m_LocalPosition: {x: 20, y: 0.5, z: -5}
   m_LocalScale: {x: 1.8618, y: 1.0808, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -694,7 +693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1557959772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.1, y: 0.2, z: 0}
+  m_LocalPosition: {x: -0.06, y: 0.11, z: -5}
   m_LocalScale: {x: 1.8079, y: 1.1346, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1130,7 +1129,7 @@ GameObject:
   - component: {fileID: 2089735675}
   - component: {fileID: 2089735677}
   - component: {fileID: 2089735676}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: world
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1197,11 +1196,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f422efaa71b90b4caf1b29469f81eac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomSize: 20
-  roomAmount: 9
-  roomPrefabs:
-  - {fileID: 2065119569893177148, guid: 2baa4d0a1ebc11040bfafda93257e827, type: 3}
-  - {fileID: 8093636621625875519, guid: 9bca83205478e2847b3b8c0d95bdd2cb, type: 3}
-  - {fileID: 2434591121106750638, guid: 002fe9a9593a55649b0fa2adab94aaa8, type: 3}
-  - {fileID: 795473740204421200, guid: 38eb324a9688e2548baede7650f10aa8, type: 3}
-  - {fileID: 2753606234057214041, guid: 3dd40dcc3e0bd75419fc0fd4fffb120a, type: 3}
+  worldSize: 128
+  tileSize: 2
+  zeeb: {fileID: 1557959774}
+  zeebCamera: {fileID: 519420032}
+  zorb: {fileID: 1328626877}
+  zorbCamera: {fileID: 138177817}

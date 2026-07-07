@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 
+/*******************************CODE FROM BMo TUTORIAL https://youtu.be/D0ENg1dQN64********************************************/
 
 public class Line : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class Line : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     void SetPoint(Vector2 point)
@@ -31,7 +32,7 @@ public class Line : MonoBehaviour
             return;
         }
 
-        if (Vector2.Distance(points.Last(), position)> 0.1f)
+        if (Vector2.Distance(points.Last(), position) > 0.1f)
         {
             SetPoint(position);
         }

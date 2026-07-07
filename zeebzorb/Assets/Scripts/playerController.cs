@@ -84,9 +84,9 @@ public class playerController : MonoBehaviour
             lineScript = newLine.GetComponent<Line>();
             newLine.GetComponent<LineRenderer>().startColor = penSprite.color;
             newLine.GetComponent<LineRenderer>().endColor = penSprite.color;
-            
+
         }
-        else if (drawing && (Input.GetKeyDown(Draw)|| !controlPen))
+        else if (drawing && (Input.GetKeyDown(Draw) || !controlPen))
         {
             drawing = false;
             lineScript = null;
@@ -106,7 +106,7 @@ public class playerController : MonoBehaviour
 
         if (controlPen)
         {
-            penRB.velocity = move/3;
+            penRB.velocity = move / 3;
         }
         else
         {
@@ -120,6 +120,11 @@ public class playerController : MonoBehaviour
 
 
 
+    }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log("Collision with " + collision.gameObject.name);
     }
 
 }
